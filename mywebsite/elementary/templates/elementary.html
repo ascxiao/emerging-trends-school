@@ -1,0 +1,723 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>USLS Elementary Overview | University of St. La Salle</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --usls-green: #006837;
+        --usls-vibrant-green: #22c55e;
+        --usls-light-green: #f0fdf4;
+        --usls-emerald: #064e3b;
+      }
+      @layer base {
+        .material-symbols-outlined {
+          font-variation-settings:
+            "FILL" 0,
+            "wght" 400,
+            "GRAD" 0,
+            "opsz" 24;
+        }
+      }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22c55e",
+              "primary-dark": "#006837",
+              "emerald-usls": "#064e3b",
+              "background-light": "#f8faf9",
+              "background-dark": "#0a1a11",
+            },
+            fontFamily: {
+              display: ["Lexend"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300"
+  >
+    <nav
+      class="sticky top-0 z-50 bg-white dark:bg-background-dark border-b border-slate-100 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <img
+                alt="USLS Seal"
+                class="w-12 h-12 object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmntcgKf_QS8uk7cFGKEXK49wfEB-hZL5QswUI5i5738L15DcrVG3in0I3Llqm5y3Fi1BO1rEO1QFRh-Znd2Cq3ewKn39WfPsKJtEJb74h-2zNQ5ikJHuWOh-QF6U5iOeJhyCcnejkuJcVDvaHF15CIJlMmtLBpNitqGyoKoR9ne9LyPdco1MVAwJJUgBT2MVB4uC8wuMHbQuH8t8Sg-F_K_SOwh13rUKvx4xrWEd0p7YFsPmx87V1MppaN8QChka1Ym7tep7laDY"
+              />
+            </div>
+            <div class="flex flex-col leading-none">
+              <span
+                class="text-[10px] font-bold text-primary-dark tracking-[0.2em] uppercase"
+                >University of St. La Salle</span
+              >
+              <span
+                class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase"
+                >Elementary</span
+              >
+            </div>
+          </div>
+          <div class="hidden lg:flex items-center gap-8">
+            <div
+              class="flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider"
+            >
+              <a class="hover:text-primary transition-colors" href="#">Home</a>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Academics</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Admissions</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Student Life</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >About Us</a
+              >
+            </div>
+            <div class="h-6 w-px bg-slate-200 dark:bg-slate-700"></div>
+            <div class="flex items-center gap-3">
+              <a
+                class="px-4 py-2 text-sm font-bold text-primary-dark dark:text-primary border border-primary-dark/20 rounded-lg hover:bg-primary/5 transition-all"
+                href="#"
+                >Portal Login</a
+              >
+              <a
+                class="px-5 py-2 text-sm font-bold text-white bg-primary-dark rounded-lg shadow-lg shadow-primary-dark/20 hover:bg-primary transition-all"
+                href="#"
+                >Apply Now</a
+              >
+            </div>
+          </div>
+          <div class="lg:hidden flex items-center gap-2">
+            <button class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800">
+              <span class="material-icons-round">search</span>
+            </button>
+            <button class="p-2 rounded-lg bg-primary-dark text-white">
+              <span class="material-icons-round">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span
+              class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-primary-dark uppercase bg-primary/10 rounded-full"
+              >Lasallian Excellence Since 1952</span
+            >
+            <h1
+              class="text-5xl lg:text-7xl font-bold text-slate-900 dark:text-white leading-[1.1] mb-6"
+            >
+              Where Faith &amp; Curiosity
+              <span class="text-primary underline decoration-primary/20"
+                >Take Flight</span
+              >
+            </h1>
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-lg leading-relaxed"
+            >
+              At USLS Elementary, we nurture the natural wonder of every child
+              through creative play, Christian values, and a supportive
+              community.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-primary-dark hover:bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary-dark/20 transition-all flex items-center gap-2"
+              >
+                Schedule a Tour
+                <span class="material-icons-round">calendar_today</span>
+              </button>
+              <button
+                class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:border-primary/30 transition-all"
+              >
+                View Curriculum
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute -bottom-12 -left-12 w-64 h-64 bg-yellow-400/10 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-1"
+            >
+              <img
+                alt="Young students learning together in a bright classroom"
+                class="w-full h-full object-cover aspect-[4/3]"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWeG4ZYZ1znE-X397EWYR9dcLDA39uyBlDqT-k0ftrhcza-ciGYGgIZUSLVGeFBj4yxD0TIfxVLaNIusN6DfVHIewBWN_inNqAILJfwEYajN7mq7aumy0ZvYMCGEIigYE5xywhkffql-1d-9FBMY1ZJd4eX2Ey0XpG90H_fD3_tpoyoPiYwNMK9QqOkeS0XVBaVPfKzspzF4wIGfA5T24vWb-B1sXz2xhi5XVRdS3nv74YCpLzaC1qx8BZCMRGgXUyDRCovL0WO4s"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent"
+              ></div>
+              <div
+                class="absolute bottom-6 left-6 right-6 p-4 bg-white/20 backdrop-blur-md rounded-xl border border-white/30 text-white"
+              >
+                <p class="text-sm font-medium italic">
+                  "Animo La Salle! The best environment for my children's early
+                  education."
+                </p>
+                <p
+                  class="text-xs font-bold mt-2 uppercase tracking-widest opacity-80"
+                >
+                  — Sarah Jenkins, USLS Parent
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="py-24 bg-white dark:bg-background-dark/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+            Foundation for the Future
+          </h2>
+          <p class="text-slate-500 max-w-2xl mx-auto">
+            Explore our dedicated learning pathways tailored for each stage of
+            development from Kindergarten through Grade 6.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 border border-transparent hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-icons-round text-3xl">child_care</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Kindergarten</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+              Building social confidence and foundational literacy through
+              play-based discovery.
+            </p>
+            <span
+              class="text-primary-dark font-semibold text-sm flex items-center gap-1"
+              >Learn More
+              <span class="material-icons-round text-xs"
+                >arrow_forward</span
+              ></span
+            >
+          </div>
+          <div
+            class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 border border-transparent hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-icons-round text-3xl">auto_stories</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">1st Grade</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+              Developing independent reading skills and exploring the world
+              through science and math.
+            </p>
+            <span
+              class="text-primary-dark font-semibold text-sm flex items-center gap-1"
+              >Learn More
+              <span class="material-icons-round text-xs"
+                >arrow_forward</span
+              ></span
+            >
+          </div>
+          <div
+            class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 border border-transparent hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 text-primary-dark rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-icons-round text-3xl">nature_people</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">2nd Grade</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+              Strengthening problem-solving skills and fostering a deeper
+              understanding of community.
+            </p>
+            <span
+              class="text-primary-dark font-semibold text-sm flex items-center gap-1"
+              >Learn More
+              <span class="material-icons-round text-xs"
+                >arrow_forward</span
+              ></span
+            >
+          </div>
+          <div
+            class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 border border-transparent hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-icons-round text-3xl">psychology</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">3rd Grade</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+              Transitioning from "learning to read" to "reading to learn" across
+              all subjects.
+            </p>
+            <span
+              class="text-primary-dark font-semibold text-sm flex items-center gap-1"
+              >Learn More
+              <span class="material-icons-round text-xs"
+                >arrow_forward</span
+              ></span
+            >
+          </div>
+          <div
+            class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 border border-transparent hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 text-primary-dark rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-icons-round text-3xl">travel_explore</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">4th Grade</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+              Deep diving into history and complex math while building critical
+              research skills.
+            </p>
+            <span
+              class="text-primary-dark font-semibold text-sm flex items-center gap-1"
+              >Learn More
+              <span class="material-icons-round text-xs"
+                >arrow_forward</span
+              ></span
+            >
+          </div>
+          <div
+            class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 border border-transparent hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer"
+          >
+            <div
+              class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-icons-round text-3xl">rocket_launch</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">5th Grade</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+              Preparing leaders of tomorrow with advanced projects and middle
+              school readiness.
+            </p>
+            <span
+              class="text-primary-dark font-semibold text-sm flex items-center gap-1"
+              >Learn More
+              <span class="material-icons-round text-xs"
+                >arrow_forward</span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-primary-dark text-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6"
+        >
+          <div class="max-w-xl text-left">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+              Beyond the Classroom
+            </h2>
+            <p class="text-white/70 leading-relaxed">
+              We believe in a holistic Lasallian education that sparks
+              creativity, health, and spiritual growth in every student.
+            </p>
+          </div>
+          <button
+            class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-primary-dark transition-all flex items-center gap-2"
+          >
+            View Full Schedule
+          </button>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="relative group h-96 rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <img
+              alt="Children painting in an art studio"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWCVxI7shbGA2VKqVmsCD67DKv9Y_p-dqXBhyqqCXLucPshNRwTZj92tyrtSI5FsomPydHNndTpKxCqJ5_5P8z4Yvf9xhuBpym62OXSGOlMZhAiwVtOYETsWZospFwWIr87iOiuo8fbtbLPsnsKEpG1iUTG_LJvikDewrBiSH-wHHK-bPX_RPxwzB-1X9IH0Ah_9kx373kBD9hxNIoCZbAV6cIOXgHn_6ptdM2O2il12ICdLKOqm57ZBQN1biUl0Gg5i3dh3MTnb8"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-8">
+              <div
+                class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center text-slate-900 mb-4"
+              >
+                <span class="material-icons-round">palette</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-2 text-white">Visual Arts</h3>
+              <p class="text-sm text-white/80">
+                Exploring color, texture, and self-expression through various
+                mediums.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative group h-96 rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <img
+              alt="Student playing a musical instrument"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWa-QFqn5Dzwwbg7Rz6PsnKlAn4WDfwkx_9UUUarkX7P57c7c6KReIJCq5p4aNQT0RbLqmu4U8L3QMSmuJortk9JDKNxAhmkah1RvE4QgUgTcgpKnH2GTCVgZA5C_PTFI4Pgszt2ONAaO9Wi1BUXlDFSiGCuIlLukGztTYlLpCgXWgx_HfqPSF39aQvk5psI-tFmhyOR5qTcFF9rL7y-ncTQN8bhn3eEG5183148fWcwLyj0LFSd1xxvVIFe55S624vpCUcEDNB7A"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-8">
+              <div
+                class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white mb-4"
+              >
+                <span class="material-icons-round">music_note</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-2 text-white">
+                Music &amp; Harmony
+              </h3>
+              <p class="text-sm text-white/80">
+                Developing rhythm, ear training, and choral performance skills.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative group h-96 rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <img
+              alt="Students running in a physical education class"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpfJAen3p9BvcYwHCSYnCWVpRlnC3Vd6CmnP8NZqq2hYeE8kQzXqnyVyQvBqygCmcD0_zrpv4WUpdhCNvYljvWVimDWWIYLl0-K6cpX8IWEthcIgSN4bOq1dN8ycv5e04W1JqrK1U4VBS4bjh--R-ciP8XEaqPm6aJ5gBbRXLk-iXoVvuwVIzeX1aikHSQMvoQGFrDA3sUETG_Tr4mAw46aO7z4RK-dMLQnQD5CcqlLpXje1wiwBap8luQ5nsPCZz3-WRf6Rm5ZVo"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-8">
+              <div
+                class="w-10 h-10 bg-emerald-400 rounded-lg flex items-center justify-center text-slate-900 mb-4"
+              >
+                <span class="material-icons-round">fitness_center</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-2 text-white">
+                Physical Education
+              </h3>
+              <p class="text-sm text-white/80">
+                Fostering teamwork, sportsmanship, and lifelong healthy habits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-white dark:bg-slate-800 rounded-[2rem] p-8 md:p-12 shadow-xl border border-primary/10 flex flex-col md:flex-row items-center gap-10"
+        >
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-4">The Parent Connection</h2>
+            <p class="text-slate-500 mb-6 leading-relaxed">
+              Stay updated with your child's progress, school announcements, and
+              event calendars through our dedicated USLS portal.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div
+                class="flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400"
+              >
+                <span class="material-icons-round text-primary text-lg"
+                  >check_circle</span
+                >
+                Real-time Grades
+              </div>
+              <div
+                class="flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400"
+              >
+                <span class="material-icons-round text-primary text-lg"
+                  >check_circle</span
+                >
+                Event RSVPs
+              </div>
+              <div
+                class="flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400"
+              >
+                <span class="material-icons-round text-primary text-lg"
+                  >check_circle</span
+                >
+                Clearance Status
+              </div>
+              <div
+                class="flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400"
+              >
+                <span class="material-icons-round text-primary text-lg"
+                  >check_circle</span
+                >
+                School Messaging
+              </div>
+            </div>
+            <button
+              class="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/30 transition-all flex items-center justify-center gap-3"
+            >
+              <span class="material-icons-round">lock</span>
+              Access Portal
+            </button>
+          </div>
+          <div
+            class="w-full md:w-80 h-80 bg-primary/5 rounded-3xl relative flex items-center justify-center p-8 overflow-hidden"
+          >
+            <div
+              class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full"
+            ></div>
+            <div
+              class="bg-white dark:bg-slate-900 w-full h-full rounded-2xl shadow-inner border border-slate-100 dark:border-slate-700 p-4 space-y-4"
+            >
+              <div
+                class="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-slate-200 animate-pulse"
+                ></div>
+                <div class="space-y-1">
+                  <div
+                    class="w-20 h-2 bg-slate-200 rounded animate-pulse"
+                  ></div>
+                  <div
+                    class="w-12 h-2 bg-slate-100 rounded animate-pulse"
+                  ></div>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div
+                  class="w-full h-3 bg-primary/20 rounded animate-pulse"
+                ></div>
+                <div class="w-4/5 h-3 bg-slate-100 rounded animate-pulse"></div>
+                <div
+                  class="w-full h-3 bg-slate-100 rounded animate-pulse"
+                ></div>
+                <div class="w-3/4 h-3 bg-slate-100 rounded animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-emerald-usls text-white pt-20 pb-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
+        >
+          <div class="space-y-8">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-14 h-14 flex items-center justify-center p-1 bg-white rounded-xl"
+              >
+                <img
+                  alt="USLS Seal"
+                  class="w-full h-full object-contain"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJrOWvt1o6j78TYg2n1MPxiYLzugBzreNx_V42QeN2HB_mZrDiDehD4qOyP2-z9qUpFk7wpioNGcI9o86TTyCd9zAbSmmi1PkznkfbL1eDlW-vHHzTqK1pptOL_rNtEY5SY3Ivu5Tp2LBi7X5e6JwKlSFf9MgC23pdof_7r0iJJx9hYcbS43O8vUwSguDxRwYSAXXpGfGiGP-IppiS8zkvbh91ce9_HTSpIWqqshsWZr6-Ccs9JoLxTbwoSfcCl-lSO6Za4yQMuFA"
+                />
+              </div>
+              <div>
+                <h4
+                  class="text-xl font-bold leading-none mb-1 uppercase tracking-tight"
+                >
+                  University of St. La Salle
+                </h4>
+                <p class="text-sm text-emerald-100/60 font-medium">
+                  Bacolod City, Philippines
+                </p>
+              </div>
+            </div>
+            <p class="text-emerald-100/80 leading-relaxed">
+              A Catholic Lasallian institution committed to the formation of the
+              youth to become men and women of faith, service, and communion.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all text-white"
+                href="#"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all text-white"
+                href="#"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5
+              class="font-bold text-white mb-6 uppercase tracking-widest text-sm"
+            >
+              Educational Units
+            </h5>
+            <ul class="space-y-4 text-sm text-emerald-100/60">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Higher Education</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Graduate Studies</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Integrated School</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Liceo De La Salle</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors font-bold text-white"
+                  href="#"
+                  >Elementary Overview</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5
+              class="font-bold text-white mb-6 uppercase tracking-widest text-sm"
+            >
+              Admissions
+            </h5>
+            <ul class="space-y-4 text-sm text-emerald-100/60">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Requirements</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Online Application</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Scholarship Programs</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Tuition &amp; Fees</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Enrollment Procedure</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5
+              class="font-bold text-white mb-6 uppercase tracking-widest text-sm"
+            >
+              Contact Info
+            </h5>
+            <ul class="space-y-4 text-sm text-emerald-100/60">
+              <li class="flex items-start gap-3">
+                <span class="material-icons-round text-primary text-sm mt-0.5"
+                  >place</span
+                >
+                <span>La Salle Ave, Bacolod City, 6100 Negros Occidental</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-icons-round text-primary text-sm"
+                  >call</span
+                >
+                <span>+63 (34) 433 2175</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-icons-round text-primary text-sm"
+                  >mail</span
+                >
+                <span>info@usls.edu.ph</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="text-xs text-emerald-100/40 uppercase tracking-[0.2em]">
+            © 2024 University of St. La Salle. All Rights Reserved.
+          </div>
+          <div
+            class="flex items-center gap-8 text-[10px] font-bold text-emerald-100/40 uppercase tracking-widest"
+          >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Privacy Policy</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Terms of Service</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Site Map</a
+            >
+          </div>
+          <div
+            class="text-xs font-bold text-emerald-100/60 italic tracking-widest"
+          >
+            INDIVISA MANENT
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="md:hidden fixed bottom-6 right-6 z-50">
+      <button
+        class="bg-primary-dark text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+      >
+        <span class="material-icons-round">login</span>
+      </button>
+    </div>
+  </body>
+</html>

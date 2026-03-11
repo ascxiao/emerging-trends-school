@@ -1,0 +1,342 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>USLS Online Enrollment</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#11d493",
+              "background-light": "#f6f8f7",
+              "background-dark": "#10221c",
+              "neutral-green": {
+                50: "#f0faf6",
+                100: "#dcf4eb",
+                200: "#bae8d6",
+                300: "#86d6ba",
+                400: "#4ebf98",
+                500: "#11d493",
+                600: "#09ad77",
+                700: "#0b8a61",
+                800: "#0d6d4f",
+                900: "#0d5a42",
+              },
+            },
+            fontFamily: {
+              display: ["Lexend"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+      .nav-link:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 min-h-screen flex flex-col font-display"
+  >
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-white dark:bg-background-dark border-b border-neutral-green-100 dark:border-neutral-green-900 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white"
+            >
+              <span class="material-icons text-3xl">school</span>
+            </div>
+            <div>
+              <h1
+                class="text-xl font-bold tracking-tight text-neutral-green-900 dark:text-primary"
+              >
+                USLS
+              </h1>
+              <p
+                class="text-[10px] uppercase tracking-widest text-neutral-green-600 font-semibold"
+              >
+                University of St. La Salle
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Home</a
+            >
+            <div class="relative group nav-link py-4">
+              <button
+                class="flex items-center text-sm font-medium hover:text-primary transition-colors"
+              >
+                Academics
+                <span class="material-icons text-sm ml-1">expand_more</span>
+              </button>
+              <div
+                class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white dark:bg-neutral-green-900 shadow-xl border border-neutral-green-50 dark:border-neutral-green-800 rounded-lg py-2 mt-0"
+              >
+                <a
+                  class="block px-4 py-2 text-sm hover:bg-neutral-green-50 dark:hover:bg-neutral-green-800"
+                  href="#"
+                  >Undergraduate</a
+                >
+                <a
+                  class="block px-4 py-2 text-sm hover:bg-neutral-green-50 dark:hover:bg-neutral-green-800"
+                  href="#"
+                  >Graduate Studies</a
+                >
+                <a
+                  class="block px-4 py-2 text-sm hover:bg-neutral-green-50 dark:hover:bg-neutral-green-800"
+                  href="#"
+                  >College of Law</a
+                >
+                <a
+                  class="block px-4 py-2 text-sm hover:bg-neutral-green-50 dark:hover:bg-neutral-green-800"
+                  href="#"
+                  >College of Medicine</a
+                >
+              </div>
+            </div>
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Admissions</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Contact</a
+            >
+            <button
+              class="bg-primary hover:bg-neutral-green-600 text-white px-5 py-2 rounded-full text-sm font-medium transition-all shadow-md shadow-primary/20"
+            >
+              Portal Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-16 px-4">
+      <div class="w-full max-w-lg">
+        <div class="text-center mb-8">
+          <h2
+            class="text-3xl font-bold text-neutral-green-900 dark:text-white mb-2"
+          >
+            Online Enrollment
+          </h2>
+          <p class="text-neutral-green-600 dark:text-neutral-green-400">
+            Academic Year 2024 - 2025
+          </p>
+          <div class="h-1 w-16 bg-primary mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div
+          class="bg-white dark:bg-neutral-green-900/40 border border-neutral-green-100 dark:border-neutral-green-800 rounded-xl shadow-xl p-8 backdrop-blur-sm"
+        >
+          <form method="post" action="{% url 'enroll' %}" class="space-y-6">
+            {% csrf_token %}
+            <div>
+              <label
+                class="block text-sm font-medium text-neutral-green-800 dark:text-neutral-green-200 mb-1"
+                for="firstname"
+                >First Name</label
+              >
+              <input
+                class="w-full px-4 py-3 rounded-lg border border-neutral-green-200 dark:border-neutral-green-700 bg-white dark:bg-neutral-green-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                id="firstname"
+                name="firstname"
+                placeholder="Enter your first name"
+                type="text"
+              />
+            </div>
+            <!-- Last Name -->
+            <div>
+              <label
+                class="block text-sm font-medium text-neutral-green-800 dark:text-neutral-green-200 mb-1"
+                for="lastname"
+                >Last Name</label
+              >
+              <input
+                class="w-full px-4 py-3 rounded-lg border border-neutral-green-200 dark:border-neutral-green-700 bg-white dark:bg-neutral-green-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                id="lastname"
+                name="lastname"
+                placeholder="Enter your last name"
+                type="text"
+              />
+            </div>
+            <!-- Age -->
+            <div>
+              <label
+                class="block text-sm font-medium text-neutral-green-800 dark:text-neutral-green-200 mb-1"
+                for="age"
+                >Age</label
+              >
+              <input
+                class="w-full px-4 py-3 rounded-lg border border-neutral-green-200 dark:border-neutral-green-700 bg-white dark:bg-neutral-green-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                id="age"
+                name="age"
+                placeholder="e.g. 18"
+                type="number"
+              />
+            </div>
+            <!-- Gender -->
+            <div>
+              <label
+                class="block text-sm font-medium text-neutral-green-800 dark:text-neutral-green-200 mb-1"
+                for="gender"
+                >Gender</label
+              >
+              <select
+                class="w-full px-4 py-3 rounded-lg border border-neutral-green-200 dark:border-neutral-green-700 bg-white dark:bg-neutral-green-900 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none cursor-pointer"
+                id="gender"
+                name="gender"
+              >
+                <option disabled="" selected="" value="">
+                  Select your gender
+                </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <!-- Submit Button -->
+            <div class="pt-4">
+              <button
+                class="w-full bg-primary hover:bg-neutral-green-600 text-white font-bold py-4 rounded-lg shadow-lg shadow-primary/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2"
+                type="submit"
+              >
+                <span>Submit Application</span>
+                <span class="material-icons text-xl">send</span>
+              </button>
+            </div>
+            <p class="text-[12px] text-center text-neutral-green-500 mt-4">
+              By submitting, you agree to the USLS Data Privacy Policy.
+            </p>
+          </form>
+
+          {% if submitted %}
+            <div class="mt-6 p-4 bg-green-100 text-green-800 rounded-lg">
+              <h3 class="font-bold">Application Submitted Successfully!</h3>
+              <p>Thank you for submitting your application. We will review your information shortly.</p>
+              <ul class="mt-2 list-disc list-inside">
+                <li><strong>Name:</strong> {{ firstname }} {{ lastname }}</li>
+                <li><strong>Age:</strong> {{ age }}</li>
+                <li><strong>Gender:</strong> {{ gender|title }}</li>
+            </ul>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-neutral-green-900 text-white py-12 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white"
+              >
+                <span class="material-icons text-2xl">school</span>
+              </div>
+              <h3 class="text-xl font-bold">University of St. La Salle</h3>
+            </div>
+            <p class="text-neutral-green-300 text-sm leading-relaxed max-w-sm">
+              Providing quality Christian education since 1952. Animat
+              Loquebantur. Committed to excellence in teaching, research, and
+              community service.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-primary">Contact Us</h4>
+            <ul class="space-y-3 text-sm text-neutral-green-300">
+              <li class="flex items-center gap-2">
+                <span class="material-icons text-sm text-primary">place</span>
+                La Salle Avenue, Bacolod City
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-icons text-sm text-primary">phone</span>
+                +63 (34) 433 3526
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-icons text-sm text-primary">mail</span>
+                admissions@usls.edu.ph
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-primary">Follow Us</h4>
+            <div class="flex gap-4">
+              <a
+                class="w-10 h-10 rounded-full bg-neutral-green-800 flex items-center justify-center hover:bg-primary transition-colors"
+                href="#"
+              >
+                <img
+                  alt="FB"
+                  data-alt="Facebook social media icon"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuADrnbAeMUIK2jvsR-h7rKOE7nD9vKJfKzzZjH7q8vSb3TYCzcohWLXWaIMq4NQeD5fPRZjICMfAtkcOGVTVPXYarkYHWeC5mpcEy9xl6mzJNqPhmheoIfYEwhyW0hZVl47tKmVO9RRuEMz2p9aEU2sy958kyO8w7ivXbpnkHzC0aAJ2CBsGkPDJuzNfFXp1gfHLCsxQ8u8KFhgwtkOxXCZ0jr2764P9O7h3iZCbC8av3W14-W1h-BUNfsyjfa2S-FmHXr7_ff9Lzs"
+                />
+              </a>
+              <a
+                class="w-10 h-10 rounded-full bg-neutral-green-800 flex items-center justify-center hover:bg-primary transition-colors"
+                href="#"
+              >
+                <img
+                  alt="TW"
+                  data-alt="Twitter social media icon"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcusWa-A3R4wruWctSTDHPDNVbah3bR9K4C8a5ifHPXxszkywJeyzbY6TCJxspSfjciuuleAULo5nbtNSr_pazCAXy_abvPd-hG_kPyGcc7Cr7WFm0mA0xxgid56u6qMzp6rc-edathC66eHJbDSLh5u0L4zukPnzAM5kGxqfKSRmhkc2LJa22oQdDhf65cxgTVuOFIVIyNDAFRL-0wDN2a3jawPY4ebzzCv7yN19rrMNHdMGxkpk3L5r-7OJn4FkWmq4IYwfPhQE"
+                />
+              </a>
+              <a
+                class="w-10 h-10 rounded-full bg-neutral-green-800 flex items-center justify-center hover:bg-primary transition-colors"
+                href="#"
+              >
+                <img
+                  alt="IG"
+                  data-alt="Instagram social media icon"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqyXN1MmT8qF3yWEmgYcMFTBaE1taZccqi2z5SWXwybtmyrEDeBSasAu5zH39o38Up8a0OE1qgP6OEug1yrIqVb0hhbeVI3_9e_1efUiWejPdg49-D_vbz-lieOZoY2XApXrR8xfO90S6aGrZWS82ezpTUPKnTcJkw0rtaYfBVqIMHd6PFdUDneUJINR6WJGVYAbdWNnAIJs68OTbAq0zjJMnTTfEDSaz8Jvuw63MGskWDetBA1NJi_lxHzTxP9rRBGOirSser4ew"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 pt-8 border-t border-neutral-green-800 text-center text-sm text-neutral-green-400"
+        >
+          <p>© 2024 University of St. La Salle. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
