@@ -24,7 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('theme.urls')),
     path('highschool/', include('highschool.urls')),
-    path('elementary/', include('elementary.urls')),  
+    path('elementary/', include('elementary.urls')),
+    path('articles/', include('articles.urls')),
 ]
 
 if settings.DEBUG:

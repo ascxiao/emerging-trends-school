@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'theme',
     'highschool',
     'elementary',
+    'articles',
 ]
 
 if DEBUG:
